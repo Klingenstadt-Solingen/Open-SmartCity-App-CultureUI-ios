@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings EN
+  OSCACultureApp
+
+  Created by Stephan Breidenbach on 22.09.22.
+  
+*/
+
+// MARK: - Alert
+// The alert title for an error
+"alert_title_error" = "Error";
+// The alert action title to confirm
+"alert_title_confirm" = "OK";
+
+// MARK: - Beacon search
+// description label text
+"beacon_description_label_text" = "Look around the Friedrich-Ebert-Str. and the Wald church yard! There are interesting artworks to discover. For more informations: quartier-wald.de";
+// header text
+"beacon_header_text" = "Art project Wald";
+// right bar button item title close
+"right_bar_button_item_title_close" = "Close";
+// distance label text
+"distance_label_text" = "Sorry You aren't in the vicinity of Artworks in Wald. Please visit our homepage.";
+// loading label text
+"loading_label_text" = "Searching for Artworks around you...";

@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings DE
+  OSCACultureApp
+
+  Created by Stephan Breidenbach on 22.09.22.
+  
+*/
+
+// MARK: - Alert
+// The alert title for an error
+"alert_title_error" = "Fehler";
+// The alert action title to confirm
+"alert_title_confirm" = "OK";
+
+// MARK: - Beacon search
+// description label text
+"beacon_description_label_text" = "Hier findest Du Informationen zu den Kunstprojekten rund um die Friedrich-Ebert-Str. und dem Walder Kirchplatz. Weitere Infos findest Du hier: quartier-wald.de";
+// header text
+"beacon_header_text" = "Walder Kunstprojekt";
+
+// right bar button item title close
+"right_bar_button_item_title_close" = "Schließen";
+
+// distance label text
+"distance_label_text" = "Du befindest dich nicht in der Nähe des Walder Kustprojektes. Schau doch in der Zwischenzeit auf unserer Homepage vorbei.";
+
+// loading label text
+"loading_label_text" = "Suche nach Kunstwerken in deiner Nähe...";

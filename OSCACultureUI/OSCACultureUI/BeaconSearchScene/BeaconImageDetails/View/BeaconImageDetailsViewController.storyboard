@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beacon Image Details View Controller-->
+        <scene sceneID="fJk-Cr-tQX">
+            <objects>
+                <viewController storyboardIdentifier="BeaconImageDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ylO-I7-M6a" customClass="BeaconImageDetailsViewController" customModule="OSCACultureUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hI0-oK-tIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiW-7h-yNb">
+                                <rect key="frame" x="383" y="64" width="15" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="CeK-wx-tQc"/>
+                                    <constraint firstAttribute="width" secondItem="xiW-7h-yNb" secondAttribute="height" multiplier="5:8" id="Di3-8v-HZm"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="times-light-svg"/>
+                                <connections>
+                                    <action selector="closeButtonTouch:" destination="ylO-I7-M6a" eventType="touchUpInside" id="Okk-Gj-ONm"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-dV-3Wv">
+                                <rect key="frame" x="16" y="264" width="382" height="382"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YGU-dV-3Wv" secondAttribute="height" id="aNX-Bc-KfS"/>
+                                </constraints>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ak3-Q1-bo5">
+                                <rect key="frame" x="149" y="662" width="116.5" height="26"/>
+                                <connections>
+                                    <action selector="pageSelected:" destination="ylO-I7-M6a" eventType="valueChanged" id="Byp-fM-7bG"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Lj-zM-Dc8"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69593157090000002" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Lj-zM-Dc8" firstAttribute="trailing" secondItem="xiW-7h-yNb" secondAttribute="trailing" constant="16" id="089-D3-lDn"/>
+                            <constraint firstItem="6Lj-zM-Dc8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ak3-Q1-bo5" secondAttribute="trailing" constant="16" id="I27-Mj-DFE"/>
+                            <constraint firstItem="Ak3-Q1-bo5" firstAttribute="centerX" secondItem="6Lj-zM-Dc8" secondAttribute="centerX" id="QNK-q4-qWe"/>
+                            <constraint firstItem="Ak3-Q1-bo5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Lj-zM-Dc8" secondAttribute="leading" constant="16" id="Tqn-1E-xA7"/>
+                            <constraint firstItem="xiW-7h-yNb" firstAttribute="top" secondItem="6Lj-zM-Dc8" secondAttribute="top" constant="16" id="f2c-yf-AxS"/>
+                            <constraint firstItem="Ak3-Q1-bo5" firstAttribute="top" secondItem="YGU-dV-3Wv" secondAttribute="bottom" constant="16" id="gzN-eP-tQk"/>
+                            <constraint firstItem="YGU-dV-3Wv" firstAttribute="centerY" secondItem="6Lj-zM-Dc8" secondAttribute="centerY" id="kxb-ys-bLP"/>
+                            <constraint firstItem="6Lj-zM-Dc8" firstAttribute="trailing" secondItem="YGU-dV-3Wv" secondAttribute="trailing" constant="16" id="nKx-Th-AYT"/>
+                            <constraint firstItem="YGU-dV-3Wv" firstAttribute="leading" secondItem="6Lj-zM-Dc8" secondAttribute="leading" constant="16" id="pus-UQ-7T4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UAJ-wL-Fp9"/>
+                    <connections>
+                        <outlet property="closeButton" destination="xiW-7h-yNb" id="Wd9-gV-MZI"/>
+                        <outlet property="containerView" destination="YGU-dV-3Wv" id="mSe-6s-3Wc"/>
+                        <outlet property="pager" destination="Ak3-Q1-bo5" id="daC-u1-MYF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4g-yf-IMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133.75" y="55.985915492957744"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="times-light-svg" width="768" height="768"/>
+    </resources>
+</document>

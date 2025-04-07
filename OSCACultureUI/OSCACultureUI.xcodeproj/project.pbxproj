@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		112FB06029A539EC0082371C /* BeaconSearchFlow+OSCADeeplinkHandeble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FB05F29A539EC0082371C /* BeaconSearchFlow+OSCADeeplinkHandeble.swift */; };
+		112FB06229A53CD40082371C /* CultureDI+DeeplinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FB06129A53CD40082371C /* CultureDI+DeeplinkHandler.swift */; };
+		116FD31F28DAE7620009C1F6 /* OSCACultureUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116FD31628DAE7620009C1F6 /* OSCACultureUI.framework */; };
+		116FD32428DAE7620009C1F6 /* OSCACultureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116FD32328DAE7620009C1F6 /* OSCACultureUITests.swift */; };
+		116FD32528DAE7620009C1F6 /* OSCACultureUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 116FD31928DAE7620009C1F6 /* OSCACultureUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		116FD33728DAE8F50009C1F6 /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 116FD33528DAE8F50009C1F6 /* API_Develop.plist */; };
+		116FD33828DAE8F50009C1F6 /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 116FD33628DAE8F50009C1F6 /* API_Release.plist */; };
+		1196194028E570290050653F /* OSCACultureUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196193F28E570290050653F /* OSCACultureUI.swift */; };
+		1196194228E571B40050653F /* OSCACultureUI+DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196194128E571B40050653F /* OSCACultureUI+DIContainer.swift */; };
+		1196194828E574A10050653F /* OSCAEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1196194728E574A10050653F /* OSCAEssentials.framework */; };
+		1196194928E574A10050653F /* OSCAEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1196194728E574A10050653F /* OSCAEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1196194C28E574A90050653F /* OSCACulture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1196194B28E574A90050653F /* OSCACulture.framework */; };
+		1196194D28E574A90050653F /* OSCACulture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1196194B28E574A90050653F /* OSCACulture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1196195E28E578AD0050653F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1196195728E578AD0050653F /* Localizable.strings */; };
+		1196196128E579040050653F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1196196028E579040050653F /* Assets.xcassets */; };
+		1196198928E579CB0050653F /* OSCASafariView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1196198828E579CB0050653F /* OSCASafariView.framework */; };
+		1196198A28E579CB0050653F /* OSCASafariView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1196198828E579CB0050653F /* OSCASafariView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1196198B28E57A5B0050653F /* BeaconSearchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196196228E579640050653F /* BeaconSearchFlow.swift */; };
+		1196198C28E57A650050653F /* BeaconSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196196428E579640050653F /* BeaconSearchViewModel.swift */; };
+		1196198D28E57A6A0050653F /* BeaconSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196196628E579640050653F /* BeaconSearchViewController.swift */; };
+		1196198E28E57A700050653F /* BeaconSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1196196828E579640050653F /* BeaconSearchViewController.storyboard */; };
+		1196198F28E57A7A0050653F /* BeaconSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196196928E579640050653F /* BeaconSearchCollectionViewCell.swift */; };
+		1196199028E57A810050653F /* BeaconDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196196E28E579640050653F /* BeaconDetailsViewModel.swift */; };
+		1196199128E57A840050653F /* BeaconDetailsCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196196F28E579640050653F /* BeaconDetailsCollectionCellViewModel.swift */; };
+		1196199228E57A870050653F /* BeaconDetailsTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196197028E579640050653F /* BeaconDetailsTableCellViewModel.swift */; };
+		1196199328E57A8C0050653F /* BeaconDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196197228E579640050653F /* BeaconDetailsViewController.swift */; };
+		1196199428E57A920050653F /* BeaconDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1196197428E579640050653F /* BeaconDetailsViewController.storyboard */; };
+		1196199528E57A9E0050653F /* BeaconDetailsArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196197528E579640050653F /* BeaconDetailsArtistTableViewCell.swift */; };
+		1196199628E57AA50050653F /* BeaconDetailsImageGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196197828E579640050653F /* BeaconDetailsImageGalleryCollectionViewCell.swift */; };
+		1196199728E57AB60050653F /* BeaconImageDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196198028E579640050653F /* BeaconImageDetailsViewModel.swift */; };
+		1196199828E57ABB0050653F /* BeaconImageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196198228E579640050653F /* BeaconImageDetailsViewController.swift */; };
+		1196199928E57AC20050653F /* BeaconImageDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1196198428E579640050653F /* BeaconImageDetailsViewController.storyboard */; };
+		1196199E28E587400050653F /* OSCATestCaseExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1196199D28E587400050653F /* OSCATestCaseExtension.framework */; };
+		11A9EA0E2B9ED9F200C1C3BC /* ActivityIndicatorView+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A9EA0D2B9ED9F200C1C3BC /* ActivityIndicatorView+init.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		116FD32028DAE7620009C1F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 116FD30D28DAE7620009C1F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 116FD31528DAE7620009C1F6;
+			remoteInfo = OSCACultureUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1196194A28E574A10050653F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1196194928E574A10050653F /* OSCAEssentials.framework in Embed Frameworks */,
+				1196194D28E574A90050653F /* OSCACulture.framework in Embed Frameworks */,
+				1196198A28E579CB0050653F /* OSCASafariView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		112FB05F29A539EC0082371C /* BeaconSearchFlow+OSCADeeplinkHandeble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BeaconSearchFlow+OSCADeeplinkHandeble.swift"; sourceTree = "<group>"; };
+		112FB06129A53CD40082371C /* CultureDI+DeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CultureDI+DeeplinkHandler.swift"; sourceTree = "<group>"; };
+		116FD31628DAE7620009C1F6 /* OSCACultureUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSCACultureUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		116FD31928DAE7620009C1F6 /* OSCACultureUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCACultureUI.h; sourceTree = "<group>"; };
+		116FD31E28DAE7620009C1F6 /* OSCACultureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCACultureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		116FD32328DAE7620009C1F6 /* OSCACultureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACultureUITests.swift; sourceTree = "<group>"; };
+		116FD32E28DAE7E10009C1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		116FD32F28DAE7EE0009C1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		116FD33528DAE8F50009C1F6 /* API_Develop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Develop.plist; path = ../../../../../SupportingFiles/API_Develop.plist; sourceTree = "<group>"; };
+		116FD33628DAE8F50009C1F6 /* API_Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Release.plist; path = ../../../../../SupportingFiles/API_Release.plist; sourceTree = "<group>"; };
+		116FD33928DAE9380009C1F6 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../../../SupportingFiles/Development.xcconfig; sourceTree = "<group>"; };
+		116FD33A28DAE9390009C1F6 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = ../../../../../SupportingFiles/Production.xcconfig; sourceTree = "<group>"; };
+		1196193F28E570290050653F /* OSCACultureUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACultureUI.swift; sourceTree = "<group>"; };
+		1196194128E571B40050653F /* OSCACultureUI+DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCACultureUI+DIContainer.swift"; sourceTree = "<group>"; };
+		1196194728E574A10050653F /* OSCAEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1196194B28E574A90050653F /* OSCACulture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCACulture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1196195828E578AD0050653F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1196195C28E578AD0050653F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1196196028E579040050653F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1196196228E579640050653F /* BeaconSearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSearchFlow.swift; sourceTree = "<group>"; };
+		1196196428E579640050653F /* BeaconSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSearchViewModel.swift; sourceTree = "<group>"; };
+		1196196628E579640050653F /* BeaconSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSearchViewController.swift; sourceTree = "<group>"; };
+		1196196828E579640050653F /* BeaconSearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeaconSearchViewController.storyboard; sourceTree = "<group>"; };
+		1196196928E579640050653F /* BeaconSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		1196196E28E579640050653F /* BeaconDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetailsViewModel.swift; sourceTree = "<group>"; };
+		1196196F28E579640050653F /* BeaconDetailsCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetailsCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		1196197028E579640050653F /* BeaconDetailsTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetailsTableCellViewModel.swift; sourceTree = "<group>"; };
+		1196197228E579640050653F /* BeaconDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetailsViewController.swift; sourceTree = "<group>"; };
+		1196197428E579640050653F /* BeaconDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeaconDetailsViewController.storyboard; sourceTree = "<group>"; };
+		1196197528E579640050653F /* BeaconDetailsArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetailsArtistTableViewCell.swift; sourceTree = "<group>"; };
+		1196197828E579640050653F /* BeaconDetailsImageGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetailsImageGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		1196197D28E579640050653F /* BeaconView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeaconView.xib; sourceTree = "<group>"; };
+		1196197E28E579640050653F /* BeaconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconView.swift; sourceTree = "<group>"; };
+		1196198028E579640050653F /* BeaconImageDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconImageDetailsViewModel.swift; sourceTree = "<group>"; };
+		1196198228E579640050653F /* BeaconImageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconImageDetailsViewController.swift; sourceTree = "<group>"; };
+		1196198428E579640050653F /* BeaconImageDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeaconImageDetailsViewController.storyboard; sourceTree = "<group>"; };
+		1196198828E579CB0050653F /* OSCASafariView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCASafariView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1196199B28E583A40050653F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1196199C28E583A40050653F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1196199D28E587400050653F /* OSCATestCaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCATestCaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1196199F28E587950050653F /* OSCATestCaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCATestCaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A9EA0D2B9ED9F200C1C3BC /* ActivityIndicatorView+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityIndicatorView+init.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		116FD31328DAE7620009C1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1196194828E574A10050653F /* OSCAEssentials.framework in Frameworks */,
+				1196194C28E574A90050653F /* OSCACulture.framework in Frameworks */,
+				1196198928E579CB0050653F /* OSCASafariView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		116FD31B28DAE7620009C1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1196199E28E587400050653F /* OSCATestCaseExtension.framework in Frameworks */,
+				116FD31F28DAE7620009C1F6 /* OSCACultureUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112FB05E29A539C10082371C /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				112FB05F29A539EC0082371C /* BeaconSearchFlow+OSCADeeplinkHandeble.swift */,
+				112FB06129A53CD40082371C /* CultureDI+DeeplinkHandler.swift */,
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		116FD30C28DAE7620009C1F6 = {
+			isa = PBXGroup;
+			children = (
+				116FD31828DAE7620009C1F6 /* OSCACultureUI */,
+				116FD32228DAE7620009C1F6 /* OSCACultureUITests */,
+				116FD31728DAE7620009C1F6 /* Products */,
+				1196194628E574A10050653F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		116FD31728DAE7620009C1F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				116FD31628DAE7620009C1F6 /* OSCACultureUI.framework */,
+				116FD31E28DAE7620009C1F6 /* OSCACultureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		116FD31828DAE7620009C1F6 /* OSCACultureUI */ = {
+			isa = PBXGroup;
+			children = (
+				11A9EA0C2B9ED9D900C1C3BC /* Extensions */,
+				112FB05E29A539C10082371C /* Deeplink */,
+				1196198728E579640050653F /* BeaconSearchScene */,
+				116FD33128DAE8400009C1F6 /* SupportingFiles */,
+				116FD33028DAE8370009C1F6 /* Resources */,
+				116FD32E28DAE7E10009C1F6 /* Info.plist */,
+				116FD31928DAE7620009C1F6 /* OSCACultureUI.h */,
+				1196193F28E570290050653F /* OSCACultureUI.swift */,
+				1196194128E571B40050653F /* OSCACultureUI+DIContainer.swift */,
+			);
+			path = OSCACultureUI;
+			sourceTree = "<group>";
+		};
+		116FD32228DAE7620009C1F6 /* OSCACultureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				116FD33228DAE84A0009C1F6 /* Resources */,
+				116FD32F28DAE7EE0009C1F6 /* Info.plist */,
+				116FD32328DAE7620009C1F6 /* OSCACultureUITests.swift */,
+			);
+			path = OSCACultureUITests;
+			sourceTree = "<group>";
+		};
+		116FD33028DAE8370009C1F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1196195728E578AD0050653F /* Localizable.strings */,
+				1196196028E579040050653F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		116FD33128DAE8400009C1F6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				116FD33928DAE9380009C1F6 /* Development.xcconfig */,
+				116FD33A28DAE9390009C1F6 /* Production.xcconfig */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		116FD33228DAE84A0009C1F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1196199A28E583A40050653F /* Localizable.strings */,
+				116FD33528DAE8F50009C1F6 /* API_Develop.plist */,
+				116FD33628DAE8F50009C1F6 /* API_Release.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1196194628E574A10050653F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1196199F28E587950050653F /* OSCATestCaseExtension.framework */,
+				1196199D28E587400050653F /* OSCATestCaseExtension.framework */,
+				1196198828E579CB0050653F /* OSCASafariView.framework */,
+				1196194B28E574A90050653F /* OSCACulture.framework */,
+				1196194728E574A10050653F /* OSCAEssentials.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1196196328E579640050653F /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				1196196228E579640050653F /* BeaconSearchFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		1196196528E579640050653F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1196196428E579640050653F /* BeaconSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1196196728E579640050653F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1196196628E579640050653F /* BeaconSearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1196196A28E579640050653F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1196196928E579640050653F /* BeaconSearchCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1196196B28E579640050653F /* BeaconSearchCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1196196A28E579640050653F /* Cell */,
+			);
+			path = BeaconSearchCollectionView;
+			sourceTree = "<group>";
+		};
+		1196196C28E579640050653F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1196196828E579640050653F /* BeaconSearchViewController.storyboard */,
+				1196196B28E579640050653F /* BeaconSearchCollectionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1196196D28E579640050653F /* BeaconSearch */ = {
+			isa = PBXGroup;
+			children = (
+				1196196528E579640050653F /* ViewModel */,
+				1196196728E579640050653F /* Controller */,
+				1196196C28E579640050653F /* View */,
+			);
+			path = BeaconSearch;
+			sourceTree = "<group>";
+		};
+		1196197128E579640050653F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1196196E28E579640050653F /* BeaconDetailsViewModel.swift */,
+				1196196F28E579640050653F /* BeaconDetailsCollectionCellViewModel.swift */,
+				1196197028E579640050653F /* BeaconDetailsTableCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1196197328E579640050653F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1196197228E579640050653F /* BeaconDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1196197628E579640050653F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1196197528E579640050653F /* BeaconDetailsArtistTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1196197728E579640050653F /* BeaconDetailsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				1196197628E579640050653F /* Cell */,
+			);
+			path = BeaconDetailsTableView;
+			sourceTree = "<group>";
+		};
+		1196197928E579640050653F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1196197828E579640050653F /* BeaconDetailsImageGalleryCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1196197A28E579640050653F /* BeaconDetailsCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1196197928E579640050653F /* Cell */,
+			);
+			path = BeaconDetailsCollectionView;
+			sourceTree = "<group>";
+		};
+		1196197B28E579640050653F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1196197428E579640050653F /* BeaconDetailsViewController.storyboard */,
+				1196197728E579640050653F /* BeaconDetailsTableView */,
+				1196197A28E579640050653F /* BeaconDetailsCollectionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1196197C28E579640050653F /* BeaconDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1196197128E579640050653F /* ViewModel */,
+				1196197328E579640050653F /* Controller */,
+				1196197B28E579640050653F /* View */,
+			);
+			path = BeaconDetails;
+			sourceTree = "<group>";
+		};
+		1196197F28E579640050653F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1196197D28E579640050653F /* BeaconView.xib */,
+				1196197E28E579640050653F /* BeaconView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1196198128E579640050653F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1196198028E579640050653F /* BeaconImageDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1196198328E579640050653F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1196198228E579640050653F /* BeaconImageDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1196198528E579640050653F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1196198428E579640050653F /* BeaconImageDetailsViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1196198628E579640050653F /* BeaconImageDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1196198128E579640050653F /* ViewModel */,
+				1196198328E579640050653F /* Controller */,
+				1196198528E579640050653F /* View */,
+			);
+			path = BeaconImageDetails;
+			sourceTree = "<group>";
+		};
+		1196198728E579640050653F /* BeaconSearchScene */ = {
+			isa = PBXGroup;
+			children = (
+				1196196328E579640050653F /* Flow */,
+				1196196D28E579640050653F /* BeaconSearch */,
+				1196197C28E579640050653F /* BeaconDetails */,
+				1196197F28E579640050653F /* Shared */,
+				1196198628E579640050653F /* BeaconImageDetails */,
+			);
+			path = BeaconSearchScene;
+			sourceTree = "<group>";
+		};
+		11A9EA0C2B9ED9D900C1C3BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11A9EA0D2B9ED9F200C1C3BC /* ActivityIndicatorView+init.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		116FD31128DAE7620009C1F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116FD32528DAE7620009C1F6 /* OSCACultureUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		116FD31528DAE7620009C1F6 /* OSCACultureUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 116FD32828DAE7620009C1F6 /* Build configuration list for PBXNativeTarget "OSCACultureUI" */;
+			buildPhases = (
+				116FD31128DAE7620009C1F6 /* Headers */,
+				116FD31228DAE7620009C1F6 /* Sources */,
+				116FD31328DAE7620009C1F6 /* Frameworks */,
+				116FD31428DAE7620009C1F6 /* Resources */,
+				1196194A28E574A10050653F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCACultureUI;
+			packageProductDependencies = (
+			);
+			productName = OSCACultureUI;
+			productReference = 116FD31628DAE7620009C1F6 /* OSCACultureUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		116FD31D28DAE7620009C1F6 /* OSCACultureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 116FD32B28DAE7620009C1F6 /* Build configuration list for PBXNativeTarget "OSCACultureUITests" */;
+			buildPhases = (
+				116FD31A28DAE7620009C1F6 /* Sources */,
+				116FD31B28DAE7620009C1F6 /* Frameworks */,
+				116FD31C28DAE7620009C1F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				116FD32128DAE7620009C1F6 /* PBXTargetDependency */,
+			);
+			name = OSCACultureUITests;
+			productName = OSCACultureUITests;
+			productReference = 116FD31E28DAE7620009C1F6 /* OSCACultureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		116FD30D28DAE7620009C1F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					116FD31528DAE7620009C1F6 = {
+						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
+					};
+					116FD31D28DAE7620009C1F6 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 116FD31028DAE7620009C1F6 /* Build configuration list for PBXProject "OSCACultureUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 116FD30C28DAE7620009C1F6;
+			packageReferences = (
+			);
+			productRefGroup = 116FD31728DAE7620009C1F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				116FD31528DAE7620009C1F6 /* OSCACultureUI */,
+				116FD31D28DAE7620009C1F6 /* OSCACultureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		116FD31428DAE7620009C1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1196199928E57AC20050653F /* BeaconImageDetailsViewController.storyboard in Resources */,
+				1196195E28E578AD0050653F /* Localizable.strings in Resources */,
+				1196199428E57A920050653F /* BeaconDetailsViewController.storyboard in Resources */,
+				1196196128E579040050653F /* Assets.xcassets in Resources */,
+				1196198E28E57A700050653F /* BeaconSearchViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		116FD31C28DAE7620009C1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116FD33728DAE8F50009C1F6 /* API_Develop.plist in Resources */,
+				116FD33828DAE8F50009C1F6 /* API_Release.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		116FD31228DAE7620009C1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1196198D28E57A6A0050653F /* BeaconSearchViewController.swift in Sources */,
+				1196198C28E57A650050653F /* BeaconSearchViewModel.swift in Sources */,
+				1196199228E57A870050653F /* BeaconDetailsTableCellViewModel.swift in Sources */,
+				1196199828E57ABB0050653F /* BeaconImageDetailsViewController.swift in Sources */,
+				112FB06029A539EC0082371C /* BeaconSearchFlow+OSCADeeplinkHandeble.swift in Sources */,
+				1196199328E57A8C0050653F /* BeaconDetailsViewController.swift in Sources */,
+				1196199728E57AB60050653F /* BeaconImageDetailsViewModel.swift in Sources */,
+				112FB06229A53CD40082371C /* CultureDI+DeeplinkHandler.swift in Sources */,
+				1196199628E57AA50050653F /* BeaconDetailsImageGalleryCollectionViewCell.swift in Sources */,
+				1196194028E570290050653F /* OSCACultureUI.swift in Sources */,
+				1196199528E57A9E0050653F /* BeaconDetailsArtistTableViewCell.swift in Sources */,
+				1196199128E57A840050653F /* BeaconDetailsCollectionCellViewModel.swift in Sources */,
+				1196194228E571B40050653F /* OSCACultureUI+DIContainer.swift in Sources */,
+				1196199028E57A810050653F /* BeaconDetailsViewModel.swift in Sources */,
+				1196198F28E57A7A0050653F /* BeaconSearchCollectionViewCell.swift in Sources */,
+				11A9EA0E2B9ED9F200C1C3BC /* ActivityIndicatorView+init.swift in Sources */,
+				1196198B28E57A5B0050653F /* BeaconSearchFlow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		116FD31A28DAE7620009C1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116FD32428DAE7620009C1F6 /* OSCACultureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		116FD32128DAE7620009C1F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 116FD31528DAE7620009C1F6 /* OSCACultureUI */;
+			targetProxy = 116FD32028DAE7620009C1F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1196195728E578AD0050653F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1196195828E578AD0050653F /* en */,
+				1196195C28E578AD0050653F /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1196199A28E583A40050653F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1196199B28E583A40050653F /* en */,
+				1196199C28E583A40050653F /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		116FD32628DAE7620009C1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116FD33928DAE9380009C1F6 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		116FD32728DAE7620009C1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116FD33A28DAE9390009C1F6 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		116FD32928DAE7620009C1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116FD33928DAE9380009C1F6 /* Development.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureUI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.ui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		116FD32A28DAE7620009C1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116FD33A28DAE9390009C1F6 /* Production.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureUI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.ui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		116FD32C28DAE7620009C1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116FD33928DAE9380009C1F6 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.ui.OSCACultureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		116FD32D28DAE7620009C1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116FD33A28DAE9390009C1F6 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.ui.OSCACultureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		116FD31028DAE7620009C1F6 /* Build configuration list for PBXProject "OSCACultureUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				116FD32628DAE7620009C1F6 /* Debug */,
+				116FD32728DAE7620009C1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		116FD32828DAE7620009C1F6 /* Build configuration list for PBXNativeTarget "OSCACultureUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				116FD32928DAE7620009C1F6 /* Debug */,
+				116FD32A28DAE7620009C1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		116FD32B28DAE7620009C1F6 /* Build configuration list for PBXNativeTarget "OSCACultureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				116FD32C28DAE7620009C1F6 /* Debug */,
+				116FD32D28DAE7620009C1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 116FD30D28DAE7620009C1F6 /* Project object */;
+}

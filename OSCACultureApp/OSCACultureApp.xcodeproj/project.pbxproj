@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1154916728E5977B00363B1F /* OSCACultureAppDI+OSCACultureUIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154916628E5977B00363B1F /* OSCACultureAppDI+OSCACultureUIDI.swift */; };
+		1154916928E5994700363B1F /* OSCACultureUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1154916828E5994700363B1F /* OSCACultureUI.framework */; };
+		1154916A28E5994700363B1F /* OSCACultureUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1154916828E5994700363B1F /* OSCACultureUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1160C74828DCABF600403D4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1160C74628DCABF600403D4C /* Localizable.strings */; };
+		1179BF1628DD83B600856871 /* OSCACultureAppDI+SafariViewDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1179BF1528DD83B600856871 /* OSCACultureAppDI+SafariViewDI.swift */; };
+		1179BF1828DD862200856871 /* OSCASafariView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1179BF1728DD862200856871 /* OSCASafariView.framework */; };
+		1179BF1928DD862200856871 /* OSCASafariView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1179BF1728DD862200856871 /* OSCASafariView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11B2970A28DB38BB006D9058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2970928DB38BB006D9058 /* AppDelegate.swift */; };
+		11B2970C28DB38BB006D9058 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2970B28DB38BB006D9058 /* SceneDelegate.swift */; };
+		11B2970E28DB38BB006D9058 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2970D28DB38BB006D9058 /* MainViewController.swift */; };
+		11B2971128DB38BB006D9058 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B2970F28DB38BB006D9058 /* MainViewController.storyboard */; };
+		11B2971328DB38BD006D9058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B2971228DB38BD006D9058 /* Assets.xcassets */; };
+		11B2971628DB38BD006D9058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B2971428DB38BD006D9058 /* LaunchScreen.storyboard */; };
+		11B2972128DB38BE006D9058 /* OSCACultureAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2972028DB38BE006D9058 /* OSCACultureAppTests.swift */; };
+		11B2972B28DB38BE006D9058 /* OSCACultureAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2972A28DB38BE006D9058 /* OSCACultureAppUITests.swift */; };
+		11B2972D28DB38BE006D9058 /* OSCACultureAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2972C28DB38BE006D9058 /* OSCACultureAppUITestsLaunchTests.swift */; };
+		11B2974128DB39E6006D9058 /* OSCACultureAppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2974028DB39E6006D9058 /* OSCACultureAppFlow.swift */; };
+		11B2974A28DB3BDC006D9058 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2974928DB3BDC006D9058 /* MainViewModel.swift */; };
+		11B2974D28DB3C8B006D9058 /* OSCAEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B2974C28DB3C8B006D9058 /* OSCAEssentials.framework */; };
+		11B2974E28DB3C8B006D9058 /* OSCAEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B2974C28DB3C8B006D9058 /* OSCAEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11B2975128DB3C9A006D9058 /* OSCANetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B2975028DB3C9A006D9058 /* OSCANetworkService.framework */; };
+		11B2975228DB3C9A006D9058 /* OSCANetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B2975028DB3C9A006D9058 /* OSCANetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11B2978028DBA948006D9058 /* OSCACultureAppDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2977F28DBA948006D9058 /* OSCACultureAppDI.swift */; };
+		11B2978228DBACCB006D9058 /* OSCACultureAppDI+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2978128DBACCB006D9058 /* OSCACultureAppDI+Config.swift */; };
+		11B2978428DBAD45006D9058 /* OSCACultureAppDI+AppFlowDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2978328DBAD45006D9058 /* OSCACultureAppDI+AppFlowDI.swift */; };
+		11B2978B28DBC06F006D9058 /* OSCACultureAppDI+OSCACultureDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2978A28DBC06F006D9058 /* OSCACultureAppDI+OSCACultureDI.swift */; };
+		11B2978D28DBC6AE006D9058 /* OSCAAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B2978C28DBC6AE006D9058 /* OSCAAnalytics.framework */; };
+		11B2978E28DBC6AE006D9058 /* OSCAAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B2978C28DBC6AE006D9058 /* OSCAAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11B2979828DBD1AA006D9058 /* OSCACulture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B2979728DBD1AA006D9058 /* OSCACulture.framework */; };
+		11B2979928DBD1AA006D9058 /* OSCACulture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B2979728DBD1AA006D9058 /* OSCACulture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11B2971D28DB38BE006D9058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11B296FE28DB38BB006D9058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11B2970528DB38BB006D9058;
+			remoteInfo = OSCACultureApp;
+		};
+		11B2972728DB38BE006D9058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11B296FE28DB38BB006D9058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11B2970528DB38BB006D9058;
+			remoteInfo = OSCACultureApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11B2974F28DB3C8B006D9058 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11B2974E28DB3C8B006D9058 /* OSCAEssentials.framework in Embed Frameworks */,
+				1154916A28E5994700363B1F /* OSCACultureUI.framework in Embed Frameworks */,
+				1179BF1928DD862200856871 /* OSCASafariView.framework in Embed Frameworks */,
+				11B2978E28DBC6AE006D9058 /* OSCAAnalytics.framework in Embed Frameworks */,
+				11B2975228DB3C9A006D9058 /* OSCANetworkService.framework in Embed Frameworks */,
+				11B2979928DBD1AA006D9058 /* OSCACulture.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1154916628E5977B00363B1F /* OSCACultureAppDI+OSCACultureUIDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCACultureAppDI+OSCACultureUIDI.swift"; sourceTree = "<group>"; };
+		1154916828E5994700363B1F /* OSCACultureUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCACultureUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1160C74728DCABF600403D4C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1160C74928DCAC1B00403D4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1179BF1528DD83B600856871 /* OSCACultureAppDI+SafariViewDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCACultureAppDI+SafariViewDI.swift"; sourceTree = "<group>"; };
+		1179BF1728DD862200856871 /* OSCASafariView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCASafariView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B2970628DB38BB006D9058 /* OSCACultureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSCACultureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B2970928DB38BB006D9058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11B2970B28DB38BB006D9058 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		11B2970D28DB38BB006D9058 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		11B2971028DB38BB006D9058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
+		11B2971228DB38BD006D9058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11B2971528DB38BD006D9058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11B2971728DB38BD006D9058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B2971C28DB38BE006D9058 /* OSCACultureAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCACultureAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B2972028DB38BE006D9058 /* OSCACultureAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACultureAppTests.swift; sourceTree = "<group>"; };
+		11B2972628DB38BE006D9058 /* OSCACultureAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCACultureAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B2972A28DB38BE006D9058 /* OSCACultureAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACultureAppUITests.swift; sourceTree = "<group>"; };
+		11B2972C28DB38BE006D9058 /* OSCACultureAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACultureAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11B2974028DB39E6006D9058 /* OSCACultureAppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACultureAppFlow.swift; sourceTree = "<group>"; };
+		11B2974928DB3BDC006D9058 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		11B2974C28DB3C8B006D9058 /* OSCAEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B2975028DB3C9A006D9058 /* OSCANetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCANetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B2977F28DBA948006D9058 /* OSCACultureAppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCACultureAppDI.swift; sourceTree = "<group>"; };
+		11B2978128DBACCB006D9058 /* OSCACultureAppDI+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCACultureAppDI+Config.swift"; sourceTree = "<group>"; };
+		11B2978328DBAD45006D9058 /* OSCACultureAppDI+AppFlowDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCACultureAppDI+AppFlowDI.swift"; sourceTree = "<group>"; };
+		11B2978A28DBC06F006D9058 /* OSCACultureAppDI+OSCACultureDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSCACultureAppDI+OSCACultureDI.swift"; sourceTree = "<group>"; };
+		11B2978C28DBC6AE006D9058 /* OSCAAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B2978F28DBCDA1006D9058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		11B2979028DBCDAD006D9058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		11B2979128DBCE0E006D9058 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../../../SupportingFiles/Development.xcconfig; sourceTree = "<group>"; };
+		11B2979528DBCE57006D9058 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = ../../../../../SupportingFiles/Production.xcconfig; sourceTree = "<group>"; };
+		11B2979728DBD1AA006D9058 /* OSCACulture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCACulture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11B2970328DB38BB006D9058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B2974D28DB3C8B006D9058 /* OSCAEssentials.framework in Frameworks */,
+				1154916928E5994700363B1F /* OSCACultureUI.framework in Frameworks */,
+				1179BF1828DD862200856871 /* OSCASafariView.framework in Frameworks */,
+				11B2978D28DBC6AE006D9058 /* OSCAAnalytics.framework in Frameworks */,
+				11B2975128DB3C9A006D9058 /* OSCANetworkService.framework in Frameworks */,
+				11B2979828DBD1AA006D9058 /* OSCACulture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B2971928DB38BE006D9058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B2972328DB38BE006D9058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1179BF1A28DD866100856871 /* ModuleDI */ = {
+			isa = PBXGroup;
+			children = (
+				1179BF1528DD83B600856871 /* OSCACultureAppDI+SafariViewDI.swift */,
+				11B2978A28DBC06F006D9058 /* OSCACultureAppDI+OSCACultureDI.swift */,
+				1154916628E5977B00363B1F /* OSCACultureAppDI+OSCACultureUIDI.swift */,
+			);
+			path = ModuleDI;
+			sourceTree = "<group>";
+		};
+		11B296FD28DB38BB006D9058 = {
+			isa = PBXGroup;
+			children = (
+				11B2970828DB38BB006D9058 /* OSCACultureApp */,
+				11B2971F28DB38BE006D9058 /* OSCACultureAppTests */,
+				11B2972928DB38BE006D9058 /* OSCACultureAppUITests */,
+				11B2970728DB38BB006D9058 /* Products */,
+				11B2974B28DB3C8B006D9058 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11B2970728DB38BB006D9058 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11B2970628DB38BB006D9058 /* OSCACultureApp.app */,
+				11B2971C28DB38BE006D9058 /* OSCACultureAppTests.xctest */,
+				11B2972628DB38BE006D9058 /* OSCACultureAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11B2970828DB38BB006D9058 /* OSCACultureApp */ = {
+			isa = PBXGroup;
+			children = (
+				11B2973928DB394B006D9058 /* Application */,
+				11B2973A28DB395C006D9058 /* Deeplink */,
+				11B2973B28DB3968006D9058 /* Presentation */,
+				11B2973C28DB3973006D9058 /* Extensions */,
+				11B2973D28DB397F006D9058 /* Model */,
+				11B2973E28DB3988006D9058 /* Resources */,
+				11B2973F28DB3993006D9058 /* SupportingFiles */,
+				11B2971728DB38BD006D9058 /* Info.plist */,
+			);
+			path = OSCACultureApp;
+			sourceTree = "<group>";
+		};
+		11B2971F28DB38BE006D9058 /* OSCACultureAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				11B2978F28DBCDA1006D9058 /* Info.plist */,
+				11B2972028DB38BE006D9058 /* OSCACultureAppTests.swift */,
+			);
+			path = OSCACultureAppTests;
+			sourceTree = "<group>";
+		};
+		11B2972928DB38BE006D9058 /* OSCACultureAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11B2979028DBCDAD006D9058 /* Info.plist */,
+				11B2972A28DB38BE006D9058 /* OSCACultureAppUITests.swift */,
+				11B2972C28DB38BE006D9058 /* OSCACultureAppUITestsLaunchTests.swift */,
+			);
+			path = OSCACultureAppUITests;
+			sourceTree = "<group>";
+		};
+		11B2973928DB394B006D9058 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				11B2970B28DB38BB006D9058 /* SceneDelegate.swift */,
+				11B2970928DB38BB006D9058 /* AppDelegate.swift */,
+				11B2974028DB39E6006D9058 /* OSCACultureAppFlow.swift */,
+				11B2974228DB39EF006D9058 /* DIContainer */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		11B2973A28DB395C006D9058 /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		11B2973B28DB3968006D9058 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				11B2974328DB3A1F006D9058 /* LaunchScreenScene */,
+				11B2974528DB3B00006D9058 /* MainScene */,
+				11E8686428DEE01700915077 /* DetailScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		11B2973C28DB3973006D9058 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11B2973D28DB397F006D9058 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11B2973E28DB3988006D9058 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1160C74628DCABF600403D4C /* Localizable.strings */,
+				11B2971228DB38BD006D9058 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11B2973F28DB3993006D9058 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11B2979528DBCE57006D9058 /* Production.xcconfig */,
+				11B2979128DBCE0E006D9058 /* Development.xcconfig */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		11B2974228DB39EF006D9058 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				11B2977F28DBA948006D9058 /* OSCACultureAppDI.swift */,
+				1179BF1A28DD866100856871 /* ModuleDI */,
+				11B2978128DBACCB006D9058 /* OSCACultureAppDI+Config.swift */,
+				11B2978328DBAD45006D9058 /* OSCACultureAppDI+AppFlowDI.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		11B2974328DB3A1F006D9058 /* LaunchScreenScene */ = {
+			isa = PBXGroup;
+			children = (
+				11B2974428DB3A2A006D9058 /* View */,
+			);
+			path = LaunchScreenScene;
+			sourceTree = "<group>";
+		};
+		11B2974428DB3A2A006D9058 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11B2971428DB38BD006D9058 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11B2974528DB3B00006D9058 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				11B2974728DB3B12006D9058 /* ViewModel */,
+				11B2974628DB3B0D006D9058 /* Controller */,
+				11B2974828DB3B1D006D9058 /* View */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		11B2974628DB3B0D006D9058 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11E8685D28DEDFF100915077 /* Cells */,
+				11B2970D28DB38BB006D9058 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B2974728DB3B12006D9058 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11B2974928DB3BDC006D9058 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11B2974828DB3B1D006D9058 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11E8686928DEE36B00915077 /* Cells */,
+				11B2970F28DB38BB006D9058 /* MainViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11B2974B28DB3C8B006D9058 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1154916828E5994700363B1F /* OSCACultureUI.framework */,
+				1179BF1728DD862200856871 /* OSCASafariView.framework */,
+				11B2979728DBD1AA006D9058 /* OSCACulture.framework */,
+				11B2978C28DBC6AE006D9058 /* OSCAAnalytics.framework */,
+				11B2975028DB3C9A006D9058 /* OSCANetworkService.framework */,
+				11B2974C28DB3C8B006D9058 /* OSCAEssentials.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11E8685D28DEDFF100915077 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		11E8686428DEE01700915077 /* DetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				11E8686728DEE03000915077 /* ViewModel */,
+				11E8686628DEE02A00915077 /* Controller */,
+				11E8686528DEE02400915077 /* View */,
+			);
+			path = DetailScene;
+			sourceTree = "<group>";
+		};
+		11E8686528DEE02400915077 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11E8686628DEE02A00915077 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11E8686828DEE04100915077 /* Cells */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11E8686728DEE03000915077 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11E8686828DEE04100915077 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		11E8686928DEE36B00915077 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11B2970528DB38BB006D9058 /* OSCACultureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B2973028DB38BE006D9058 /* Build configuration list for PBXNativeTarget "OSCACultureApp" */;
+			buildPhases = (
+				11B2970228DB38BB006D9058 /* Sources */,
+				11B2970328DB38BB006D9058 /* Frameworks */,
+				11B2970428DB38BB006D9058 /* Resources */,
+				11B2974F28DB3C8B006D9058 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCACultureApp;
+			packageProductDependencies = (
+			);
+			productName = OSCACultureApp;
+			productReference = 11B2970628DB38BB006D9058 /* OSCACultureApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11B2971B28DB38BE006D9058 /* OSCACultureAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B2973328DB38BE006D9058 /* Build configuration list for PBXNativeTarget "OSCACultureAppTests" */;
+			buildPhases = (
+				11B2971828DB38BE006D9058 /* Sources */,
+				11B2971928DB38BE006D9058 /* Frameworks */,
+				11B2971A28DB38BE006D9058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11B2971E28DB38BE006D9058 /* PBXTargetDependency */,
+			);
+			name = OSCACultureAppTests;
+			productName = OSCACultureAppTests;
+			productReference = 11B2971C28DB38BE006D9058 /* OSCACultureAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11B2972528DB38BE006D9058 /* OSCACultureAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B2973628DB38BE006D9058 /* Build configuration list for PBXNativeTarget "OSCACultureAppUITests" */;
+			buildPhases = (
+				11B2972228DB38BE006D9058 /* Sources */,
+				11B2972328DB38BE006D9058 /* Frameworks */,
+				11B2972428DB38BE006D9058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11B2972828DB38BE006D9058 /* PBXTargetDependency */,
+			);
+			name = OSCACultureAppUITests;
+			productName = OSCACultureAppUITests;
+			productReference = 11B2972628DB38BE006D9058 /* OSCACultureAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11B296FE28DB38BB006D9058 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					11B2970528DB38BB006D9058 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					11B2971B28DB38BE006D9058 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 11B2970528DB38BB006D9058;
+					};
+					11B2972528DB38BE006D9058 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 11B2970528DB38BB006D9058;
+					};
+				};
+			};
+			buildConfigurationList = 11B2970128DB38BB006D9058 /* Build configuration list for PBXProject "OSCACultureApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 11B296FD28DB38BB006D9058;
+			packageReferences = (
+			);
+			productRefGroup = 11B2970728DB38BB006D9058 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11B2970528DB38BB006D9058 /* OSCACultureApp */,
+				11B2971B28DB38BE006D9058 /* OSCACultureAppTests */,
+				11B2972528DB38BE006D9058 /* OSCACultureAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11B2970428DB38BB006D9058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B2971628DB38BD006D9058 /* LaunchScreen.storyboard in Resources */,
+				1160C74828DCABF600403D4C /* Localizable.strings in Resources */,
+				11B2971328DB38BD006D9058 /* Assets.xcassets in Resources */,
+				11B2971128DB38BB006D9058 /* MainViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B2971A28DB38BE006D9058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B2972428DB38BE006D9058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11B2970228DB38BB006D9058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B2978228DBACCB006D9058 /* OSCACultureAppDI+Config.swift in Sources */,
+				11B2978B28DBC06F006D9058 /* OSCACultureAppDI+OSCACultureDI.swift in Sources */,
+				11B2974A28DB3BDC006D9058 /* MainViewModel.swift in Sources */,
+				11B2970E28DB38BB006D9058 /* MainViewController.swift in Sources */,
+				1154916728E5977B00363B1F /* OSCACultureAppDI+OSCACultureUIDI.swift in Sources */,
+				11B2970A28DB38BB006D9058 /* AppDelegate.swift in Sources */,
+				11B2974128DB39E6006D9058 /* OSCACultureAppFlow.swift in Sources */,
+				11B2970C28DB38BB006D9058 /* SceneDelegate.swift in Sources */,
+				11B2978428DBAD45006D9058 /* OSCACultureAppDI+AppFlowDI.swift in Sources */,
+				11B2978028DBA948006D9058 /* OSCACultureAppDI.swift in Sources */,
+				1179BF1628DD83B600856871 /* OSCACultureAppDI+SafariViewDI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B2971828DB38BE006D9058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B2972128DB38BE006D9058 /* OSCACultureAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B2972228DB38BE006D9058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B2972B28DB38BE006D9058 /* OSCACultureAppUITests.swift in Sources */,
+				11B2972D28DB38BE006D9058 /* OSCACultureAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11B2971E28DB38BE006D9058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11B2970528DB38BB006D9058 /* OSCACultureApp */;
+			targetProxy = 11B2971D28DB38BE006D9058 /* PBXContainerItemProxy */;
+		};
+		11B2972828DB38BE006D9058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11B2970528DB38BB006D9058 /* OSCACultureApp */;
+			targetProxy = 11B2972728DB38BE006D9058 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1160C74628DCABF600403D4C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1160C74728DCABF600403D4C /* de */,
+				1160C74928DCAC1B00403D4C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		11B2970F28DB38BB006D9058 /* MainViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11B2971028DB38BB006D9058 /* Base */,
+			);
+			name = MainViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		11B2971428DB38BD006D9058 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11B2971528DB38BD006D9058 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11B2972E28DB38BE006D9058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2979128DBCE0E006D9058 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11B2972F28DB38BE006D9058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2979528DBCE57006D9058 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11B2973128DB38BE006D9058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2979128DBCE0E006D9058 /* Development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.OSCACultureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11B2973228DB38BE006D9058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2979528DBCE57006D9058 /* Production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.OSCACultureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11B2973428DB38BE006D9058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2979128DBCE0E006D9058 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureAppTests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.OSCACultureAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSCACultureApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OSCACultureApp";
+			};
+			name = Debug;
+		};
+		11B2973528DB38BE006D9058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2979528DBCE57006D9058 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureAppTests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.OSCACultureAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSCACultureApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OSCACultureApp";
+			};
+			name = Release;
+		};
+		11B2973728DB38BE006D9058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2979128DBCE0E006D9058 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureAppUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.OSCACultureAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OSCACultureApp;
+			};
+			name = Debug;
+		};
+		11B2973828DB38BE006D9058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2979528DBCE57006D9058 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCACultureAppUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.culture.OSCACultureAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OSCACultureApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11B2970128DB38BB006D9058 /* Build configuration list for PBXProject "OSCACultureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B2972E28DB38BE006D9058 /* Debug */,
+				11B2972F28DB38BE006D9058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B2973028DB38BE006D9058 /* Build configuration list for PBXNativeTarget "OSCACultureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B2973128DB38BE006D9058 /* Debug */,
+				11B2973228DB38BE006D9058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B2973328DB38BE006D9058 /* Build configuration list for PBXNativeTarget "OSCACultureAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B2973428DB38BE006D9058 /* Debug */,
+				11B2973528DB38BE006D9058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B2973628DB38BE006D9058 /* Build configuration list for PBXNativeTarget "OSCACultureAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B2973728DB38BE006D9058 /* Debug */,
+				11B2973828DB38BE006D9058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11B296FE28DB38BB006D9058 /* Project object */;
+}
